@@ -67,16 +67,16 @@
 } */
 
 .edit img {
-  background-size: cover;
+  /* background-size: cover; */
   object-fit: cover;
-  background-position: center;
+  /* background-position: center; */
   height: 90vh;
 }
 
-.container {
+/* .container {
   max-width: 1500px !important;
   padding: 0 !important;
-}
+} */
 .icon-style {
   display: flex;
   gap: 5px;

@@ -72,10 +72,10 @@
   background-position: left;
   height: 90vh;
 }
+.shoe-img {
+  background-position: center;
+}
 .container {
   max-width: 1500px !important;
   padding: 0 !important;
-}
-.caption {
-  color: white !important;
 }

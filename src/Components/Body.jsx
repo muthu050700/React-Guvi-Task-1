@@ -1,12 +1,51 @@
 import Carousel from "react-bootstrap/Carousel";
+
 function DarkVariantExample() {
   return (
+    // <Carousel data-bs-theme="dark" className="carousal-container">
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 img"
+    //       src="./src/assets/male-7275449_1920.jpg"
+    //       alt="First slide"
+    //     />
+    //     <Carousel.Caption >
+    //       <h5>First slide label</h5>
+    //       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    //     </Carousel.Caption>
+    //   </Carousel.Item>
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 img"
+    //       src="./src/assets/woman-3040029_1920.jpg"
+    //       alt="Second slide"
+    //     />
+    //     <Carousel.Caption>
+    //       <h5>Second slide label</h5>
+    //       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    //     </Carousel.Caption>
+    //   </Carousel.Item>
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 img"
+    //       src="./src/assets/shoes-4345656_1920.jpg"
+    //       alt="Third slide"
+    //     />
+    //     <Carousel.Caption>
+    //       <h5>Third slide label</h5>
+    //       <p>
+    //         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+    //       </p>
+    //     </Carousel.Caption>
+    //   </Carousel.Item>
+    // </Carousel>
+
     <>
       <Carousel data-bs-theme="dark" className="container main-container">
         <Carousel.Item className="edit">
           <img
-            className="d-block w-100"
-            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
+            className="d-block w-100 shoe-img"
+            src="https://cdn.pixabay.com/photo/2017/07/13/02/53/shoe-2498994_960_720.jpg"
             alt="First slide"
           />
           <Carousel.Caption className="caption">
@@ -20,7 +59,7 @@ function DarkVariantExample() {
         <Carousel.Item className="edit">
           <img
             className="d-block w-100"
-            src="./src/assets/feet-1840619_1920.jpg"
+            src="https://cdn.pixabay.com/photo/2021/11/15/05/25/boutique-6796399_960_720.jpg"
             alt="Second slide"
           />
           <Carousel.Caption className="caption">
@@ -35,7 +74,7 @@ function DarkVariantExample() {
         <Carousel.Item className="edit">
           <img
             className="d-block w-100"
-            src="./src/assets/woman-3040029_1920.jpg"
+            src="https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>

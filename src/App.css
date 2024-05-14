@@ -68,7 +68,7 @@
 
 .edit img {
   background-size: cover;
-  object-fit: fill;
+  object-fit: cover;
   background-position: center;
   height: 90vh;
 }

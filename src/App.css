@@ -75,10 +75,10 @@
   height: 90vh;
 }
 
-.container {
-  max-width: 1500px !important;
+/* .container {
+  max-width: 1000px !important;
   padding: 0 !important;
-}
+} */
 .icon-style {
   display: flex;
   gap: 5px;

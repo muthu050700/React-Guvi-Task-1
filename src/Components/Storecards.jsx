@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
+import Star from "./Star";
 function Storecards(props) {
   const [cartBtn, setCartBtn] = useState("add to cart");
   const { card, addingCartValue, removingCartValue } = props;
@@ -11,8 +11,9 @@ function Storecards(props) {
       <Card.Img className="card-img" src={image} />
       <Card.Body>
         <Card.Title>{category}</Card.Title>
-        <p>{price}</p>
-        <p>{rating.rate}</p>
+        <p>Price : {price}</p>
+        <Star count={rating.count} stars={rating.rate} rating={rating.rate} />
+        <p>Count : {rating.count}</p>
         <Button
           className={`${
             cartBtn === "add to cart" ? "bg-primary" : "bg-danger"

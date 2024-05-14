@@ -79,3 +79,7 @@
   max-width: 1500px !important;
   padding: 0 !important;
 }
+.icon-style {
+  display: flex;
+  gap: 5px;
+}

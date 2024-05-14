@@ -69,12 +69,10 @@
 .edit img {
   background-size: cover;
   object-fit: fill;
-  background-position: left;
+  background-position: center;
   height: 90vh;
 }
-.shoe-img {
-  background-position: center;
-}
+
 .container {
   max-width: 1500px !important;
   padding: 0 !important;

@@ -68,14 +68,15 @@
 
 .edit img {
   /* background-size: cover; */
-  object-fit: contain;
-  background-position: left;
+  object-fit: cover;
+  background-position: top;
+  height: 90vh;
 }
 
-/* .container {
+.container {
   max-width: 1500px !important;
   padding: 0 !important;
-} */
+}
 .icon-style {
   display: flex;
   gap: 5px;

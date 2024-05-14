@@ -68,9 +68,8 @@
 
 .edit img {
   /* background-size: cover; */
-  object-fit: cover;
-  /* background-position: center; */
-  height: 90vh;
+  object-fit: contain;
+  background-position: left;
 }
 
 /* .container {

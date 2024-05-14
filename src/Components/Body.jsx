@@ -45,7 +45,7 @@ function DarkVariantExample() {
         <Carousel.Item className="edit">
           <img
             className="d-block w-100 shoe-img"
-            src="https://cdn.pixabay.com/photo/2019/07/13/10/25/payment-4334491_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140604_640.jpg"
             alt="First slide"
           />
           <Carousel.Caption className="caption">

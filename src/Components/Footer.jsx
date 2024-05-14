@@ -94,7 +94,7 @@ function Footer() {
         className="text-center text-dark p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2020 Copyright:
+        © 2024 Copyright:
         <a className="text-dark" href="#">
           Muthukumaran.com
         </a>

@@ -2,55 +2,23 @@ import Carousel from "react-bootstrap/Carousel";
 
 function DarkVariantExample() {
   return (
-    // <Carousel data-bs-theme="dark" className="carousal-container">
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100 img"
-    //       src="./src/assets/male-7275449_1920.jpg"
-    //       alt="First slide"
-    //     />
-    //     <Carousel.Caption >
-    //       <h5>First slide label</h5>
-    //       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100 img"
-    //       src="./src/assets/woman-3040029_1920.jpg"
-    //       alt="Second slide"
-    //     />
-    //     <Carousel.Caption>
-    //       <h5>Second slide label</h5>
-    //       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    //   <Carousel.Item>
-    //     <img
-    //       className="d-block w-100 img"
-    //       src="./src/assets/shoes-4345656_1920.jpg"
-    //       alt="Third slide"
-    //     />
-    //     <Carousel.Caption>
-    //       <h5>Third slide label</h5>
-    //       <p>
-    //         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-    //       </p>
-    //     </Carousel.Caption>
-    //   </Carousel.Item>
-    // </Carousel>
-
     <>
       <Carousel data-bs-theme="dark" className="container main-container">
-        <Carousel.Item className="edit">
-          <img
-            className="d-block w-100 shoe-img"
-            src="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_640.jpg"
-            alt="First slide"
-          />
+        <Carousel.Item className="edit  object-cover object-bottom">
+          <div>
+            <img
+              className="d-block w-100  h-[400px] sm:h-[600px] lg:h-[700px] blur-[1px]"
+              src="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_640.jpg"
+              alt="First slide"
+            />
+            <div className="bg-black absolute top-0 bottom-0 w-full h-full  opacity-[0.4]"></div>
+          </div>
+
           <Carousel.Caption className="caption">
-            <h2>ShopSmart: Where Every Click Counts</h2>
-            <h6>
+            <h2 className="font-bold text-lg py-2 text-white">
+              ShopSmart: Where Every Click Counts
+            </h2>
+            <h6 className="text-white">
               Discover a smarter way to shop with curated selections where each
               click leads to quality finds, making every purchase count.
             </h6>
@@ -58,29 +26,40 @@ function DarkVariantExample() {
         </Carousel.Item>
 
         <Carousel.Item className="edit">
-          <img
-            className="d-block w-100"
-            src="https://cdn.pixabay.com/photo/2024/05/09/08/43/women-8750279_1280.png"
-            alt="Second slide"
-          />
-          <Carousel.Caption className="caption">
-            <h2>Browse, Click, Buy: Welcome to Your Shopping Haven</h2>
-            <h6>
+          <div>
+            <img
+              className="d-block w-100  h-[400px] sm:h-[600px] lg:h-[700px] blur-[1px]"
+              src="https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg"
+              alt="Second slide"
+            />
+            <div className="bg-black absolute top-0 bottom-0 w-full h-full  opacity-[0.4]"></div>
+          </div>
+
+          <Carousel.Caption className="caption text-stone-600">
+            <h2 className="font-bold text-lg py-2 text-white">
+              Browse, Click, Buy: Welcome to Your Shopping Haven
+            </h2>
+            <h6 className=" text-white">
               Welcome to Your Shopping Haven! Browse our curated collection,
-              click to explore, and buy with ease. Experience convenience and
-              satisfaction with every purchase.
+              click to explore, and buy with ease.
             </h6>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="edit">
-          <img
-            className="d-block w-100"
-            src="https://cdn.pixabay.com/photo/2016/02/02/11/56/leather-1175154_640.jpg"
-            alt="Third slide"
-          />
+          <div>
+            <img
+              className="d-block w-100  h-[400px] sm:h-[600px] lg:h-[700px] blur-[1px]"
+              src="https://cdn.pixabay.com/photo/2024/02/26/14/13/shopping-8598070_1280.jpg"
+              alt="Third slide"
+            />
+            <div className="bg-black absolute top-0 bottom-0 w-full h-full blur-[1px] opacity-[0.4]"></div>
+          </div>
+
           <Carousel.Caption>
-            <h2>TreasureTroves: Discover, Shop, Smile</h2>
-            <h6>
+            <h2 className="font-bold text-lg py-2 text-white">
+              TreasureTroves: Discover, Shop, Smile
+            </h2>
+            <h6 className="text-white">
               TreasureTroves: Your destination for discovering delightful finds.
               Shop with us and leave with a smile!
             </h6>

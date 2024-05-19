@@ -21,7 +21,7 @@ const Star = ({ count, stars, rating }) => {
     <wrapper>
       <div className="icon-style">
         <p>{rating}</p>
-        <p>{ratingStar}</p>
+        <p className="flex mt-1 pl-1 text-yellow-600">{ratingStar}</p>
       </div>
     </wrapper>
   );

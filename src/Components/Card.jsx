@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Storecards from "./Storecards";
-
+import PropTypes from "prop-types";
 export function BasicExample({ addingCartValue, removingCartValue }) {
   // forCartValue();
   const [storeApiData, setStoreApiData] = useState([]);
@@ -28,3 +28,8 @@ export function BasicExample({ addingCartValue, removingCartValue }) {
     </div>
   );
 }
+
+BasicExample.prototype = {
+  addingCartValue: PropTypes.number,
+  removingCartValue: PropTypes.number,
+};

@@ -15,10 +15,10 @@ function DarkVariantExample() {
           </div>
 
           <Carousel.Caption className="caption">
-            <h2 className="font-bold text-lg py-2 text-white">
+            <h2 className="font-bold text-lg py-2 text-white sm:text-xl lg:text-2xl">
               ShopSmart: Where Every Click Counts
             </h2>
-            <h6 className="text-white">
+            <h6 className="text-white sm:text-lg lg:text-xl">
               Discover a smarter way to shop with curated selections where each
               click leads to quality finds, making every purchase count.
             </h6>
@@ -36,10 +36,10 @@ function DarkVariantExample() {
           </div>
 
           <Carousel.Caption className="caption text-stone-600">
-            <h2 className="font-bold text-lg py-2 text-white">
+            <h2 className="font-bold text-lg py-2 text-white sm:text-xl lg:text-2xl">
               Browse, Click, Buy: Welcome to Your Shopping Haven
             </h2>
-            <h6 className=" text-white">
+            <h6 className=" text-white sm:text-lg lg:text-xl">
               Welcome to Your Shopping Haven! Browse our curated collection,
               click to explore, and buy with ease.
             </h6>
@@ -56,10 +56,10 @@ function DarkVariantExample() {
           </div>
 
           <Carousel.Caption>
-            <h2 className="font-bold text-lg py-2 text-white">
+            <h2 className="font-bold text-lg py-2 text-white sm:text-xl lg:text-2xl">
               TreasureTroves: Discover, Shop, Smile
             </h2>
-            <h6 className="text-white">
+            <h6 className="text-white sm:text-lg lg:text-xl">
               TreasureTroves: Your destination for discovering delightful finds.
               Shop with us and leave with a smile!
             </h6>

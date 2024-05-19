@@ -3,8 +3,9 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import PropTypes from "prop-types";
 function NavScrollExample({ cartValue }) {
+  console.log(cartValue);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -43,3 +44,7 @@ function NavScrollExample({ cartValue }) {
 }
 
 export default NavScrollExample;
+
+NavScrollExample.prototype = {
+  cartValue: PropTypes.number,
+};

@@ -1,8 +1,8 @@
 import { FaStarHalfAlt } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
+import PropTypes from "prop-types";
 const Star = ({ count, stars, rating }) => {
-  console.log(count, stars);
   const ratingStar = Array.from({ length: 5 }, (elem, index) => {
     let number = index + 0.5;
     return (
@@ -28,3 +28,9 @@ const Star = ({ count, stars, rating }) => {
 };
 
 export default Star;
+
+Star.propTypes = {
+  count: PropTypes.number,
+  stars: PropTypes.number,
+  rating: PropTypes.number,
+};

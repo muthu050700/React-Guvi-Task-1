@@ -14,7 +14,7 @@ export function BasicExample({ addingCartValue, removingCartValue }) {
     setStoreApiData(json);
   }
   return (
-    <div className="storecards">
+    <div className="storecards m-4">
       {storeApiData.map((value) => {
         return (
           <Storecards

@@ -9,33 +9,48 @@ function Storecards(props) {
   const { category, description, image, price, rating } = card;
 
   return (
-    <Card className="shoppingcard ">
+    <Card className="shoppingcard relative">
+      <div className="absolute top-0 right-0 m-2">
+        {rating.rate >= 4 && (
+          <p className="px-3 py-1 bg-black text-white rounded-lg text-end font-bold">
+            sale
+          </p>
+        )}
+      </div>
+
       <Card.Img className="card-img" src={image} />
       <Card.Body>
-        <Card.Title>{category}</Card.Title>
+        <h4>{category}</h4>
         <p>Price : {price}</p>
         <Star count={rating.count} stars={rating.rate} rating={rating.rate} />
         <p>Count : {rating.count}</p>
-        <Button
-          className={`${
-            cartBtn === "add to cart" ? "bg-primary" : "bg-danger"
-          }`}
-          onClick={() => {
-            // cartBtn === "add to cart"
-            //   ? setCartBtn("Remove from cart")
-            //   : setCartBtn("add to cart");
-            // addingCartValue();
-            if (cartBtn === "add to cart") {
-              setCartBtn("Remove from cart");
-              addingCartValue();
-            } else {
-              setCartBtn("add to cart");
-              removingCartValue();
-            }
-          }}
-        >
-          {cartBtn}
-        </Button>
+
+        {rating.rate >= 4 ? (
+          <Button
+            className={`${
+              cartBtn === "add to cart" ? "bg-primary" : "bg-danger"
+            } `}
+            onClick={() => {
+              // cartBtn === "add to cart"
+              //   ? setCartBtn("Remove from cart")
+              //   : setCartBtn("add to cart");
+              // addingCartValue();
+              if (cartBtn === "add to cart") {
+                setCartBtn("Remove from cart");
+                addingCartValue();
+              } else {
+                setCartBtn("add to cart");
+                removingCartValue();
+              }
+            }}
+          >
+            {cartBtn}
+          </Button>
+        ) : (
+          <button className="px-2 py-[7px] rounded-lg text-white bg-sky-600">
+            View option
+          </button>
+        )}
       </Card.Body>
     </Card>
   );

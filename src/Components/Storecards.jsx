@@ -29,12 +29,8 @@ function Storecards(props) {
           <Button
             className={`${
               cartBtn === "add to cart" ? "bg-primary" : "bg-danger"
-            } `}
+            }`}
             onClick={() => {
-              // cartBtn === "add to cart"
-              //   ? setCartBtn("Remove from cart")
-              //   : setCartBtn("add to cart");
-              // addingCartValue();
               if (cartBtn === "add to cart") {
                 setCartBtn("Remove from cart");
                 addingCartValue();
